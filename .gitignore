@@ -1,0 +1,24 @@
+# Maven specific
+target/
+*.iml
+
+# IDE specific
+.idea/
+.vscode/
+
+# TestNG reports
+test-output/
+
+# Logs
+logs/
+
+# Compiled Java classes
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Dependency directories
+lib/
