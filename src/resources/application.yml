@@ -1,0 +1,27 @@
+profile: qa
+app:
+  ipAddress: 127.0.0.1
+  port: 4723
+  deviceName: iPhone 15
+  platformVersion: 17.2
+  appName: iOSTestApp.app
+browser: chrome
+testTimeout: 10
+
+
+api:
+  login:
+    uri: https://reqres.in/api/users/
+
+
+
+
+
+
+
+
+
+
+
+
+

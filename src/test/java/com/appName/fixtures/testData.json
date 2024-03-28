@@ -1,0 +1,22 @@
+{
+  "CIC": "854713",
+  "PIC": "678952",
+  "email": "user1@xpanse.com",
+  "password": "pass@123",
+  "name": "John",
+  "surname": "Doe",
+  "ValidationMessages": {
+    "err1": "Email is required.",
+    "err2": "Password is required.",
+    "loginSuccess": "User Login successful."
+  },
+  "tutorial": {
+    "step1": "Awning will be unlocked in 60s.",
+    "step2": "CLick Next.",
+    "step3": "Click Thermal Sensor Data."
+  },
+  "sensorData": {
+    "energyData": "totalConsumption 32KW",
+    "windData": "WindSpeed 34KMPh"
+  }
+}
