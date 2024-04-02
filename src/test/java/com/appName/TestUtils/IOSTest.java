@@ -15,7 +15,7 @@ public class IOSTest extends AppiumUtils {
     public IOSDriver driver;
     public AppiumDriverLocalService service;
     public HomePage homePage;
-    public String configFile = "application.json";
+    public String configFile = "application.yml";
 
     static {
         System.setProperty("log4j.configurationFile", "log4j2.xml");
