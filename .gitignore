@@ -10,6 +10,7 @@ target/
 test-output/
 
 # Logs
+Logs/
 logs/
 
 # Compiled Java classes
@@ -19,6 +20,6 @@ logs/
 *.jar
 *.war
 *.ear
-
+*.log
 # Dependency directories
 lib/

@@ -25,7 +25,6 @@ public class YamlReader {
 
     private void loadYaml(String filePath) {
         try {
-            System.out.println(filePath);
             InputStream input = new FileInputStream(filePath);
             Yaml yaml = new Yaml();
             yamlData = yaml.load(input);

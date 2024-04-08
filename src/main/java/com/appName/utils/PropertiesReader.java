@@ -5,12 +5,21 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+/***
+ * How to use:
+ *         PropertiesReader reader = new PropertiesReader("app.properties");
+ *         String serverUrl = reader.getProperty("ipAddress");
+ *         int port = reader.getIntProperty("port");
+ *         System.out.println("Server URL: " + serverUrl);
+ *         System.out.println("Port: " + port);
+ */
 public class PropertiesReader {
     private Properties properties;
+    private final String filePath = System.getProperty("user.dir") + "\\src\\resources\\";
 
-    public PropertiesReader(String filePath) {
+    public PropertiesReader(String fileName) {
         this.properties = new Properties();
-        loadProperties(filePath);
+        loadProperties(filePath + fileName);
     }
 
     private void loadProperties(String filePath) {
@@ -39,16 +48,4 @@ public class PropertiesReader {
         return Boolean.parseBoolean(value); // this will return false if value is null or not "true"
     }
 
-    // Add more methods as needed for your specific use case
-
-    public static void main(String[] args) {
-        PropertiesReader reader = new PropertiesReader("app.properties");
-        // Example usage:
-        String serverUrl = reader.getProperty("server.url");
-        int port = reader.getIntProperty("server.port");
-        boolean debugMode = reader.getBooleanProperty("app.debug");
-        System.out.println("Server URL: " + serverUrl);
-        System.out.println("Port: " + port);
-        System.out.println("Debug Mode: " + debugMode);
-    }
 }

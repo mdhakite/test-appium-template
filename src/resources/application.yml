@@ -1,13 +1,20 @@
 profile: qa
-app:
+platform: iOS
+appium:
+  mainJSPath: "C:\\Users\\Madhusudan\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"
   ipAddress: 127.0.0.1
   port: 4723
+
+app:
   deviceName: iPhone 15
   platformVersion: 17.2
   appName: iOSTestApp.app
+
+android:
+  deviceName: Nexus 6 API 30
+
 browser: chrome
 testTimeout: 10
-
 
 api:
   login:
