@@ -1,0 +1,11 @@
+app:
+  deviceName: iPhone 15
+  platformVersion: 17.2
+  appName: iOSTestApp.app
+
+android:
+  deviceName: Nexus 6 API 30
+  platform: test
+
+api:
+  baseUri: http://dev-api.xponentpowerapp.com/

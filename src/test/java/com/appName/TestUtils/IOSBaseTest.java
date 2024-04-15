@@ -1,7 +1,6 @@
 package com.appName.TestUtils;
 
 import com.appName.AppPages.HomePage;
-import com.appName.utils.AppiumUtils;
 import com.appName.utils.YamlReader;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -13,7 +12,7 @@ import org.testng.annotations.BeforeClass;
 
 import java.time.Duration;
 
-public class IOSBaseTest extends AppiumUtils {
+public class IOSBaseTest extends BaseTest {
     public IOSDriver driver;
     public AppiumDriverLocalService service;
     public HomePage homePage;
@@ -27,7 +26,7 @@ public class IOSBaseTest extends AppiumUtils {
             YamlReader reader = new YamlReader(configFile);
             String ipAddress = (String) reader.getProperty("appium.ipAddress");
             int port = (int) reader.getProperty("appium.port");
-            service = startAppiumServer(ipAddress, port,(String) reader.getProperty("appium.mainJSPath"));
+            service = appiumUtils.startAppiumServer(ipAddress, port,(String) reader.getProperty("appium.mainJSPath"));
 
             String platformVersion = Double.toString((Double) reader.getProperty("app.platformVersion"));
             String app = System.getProperty("user.dir") + "\\src\\main\\resources\\" + reader.getProperty("app.appName");

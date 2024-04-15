@@ -1,8 +1,6 @@
 {
   "CIC": "854713",
   "PIC": "678952",
-  "email": "user1@xpanse.com",
-  "password": "zXjY46hCAmXtObS489mFHmNhC0Kcl1Eu",
   "name": "John",
   "surname": "Doe",
   "ValidationMessages": {
@@ -18,5 +16,9 @@
   "sensorData": {
     "energyData": "totalConsumption 32KW",
     "windData": "WindSpeed 34KMPh"
+  },
+  "login": {
+    "email": "user1@xpanse.com",
+    "password": "zXjY46hCAmXtObS489mFHmNhC0Kcl1Eu"
   }
 }

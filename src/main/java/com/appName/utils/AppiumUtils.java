@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.time.Duration;
 
-public abstract class AppiumUtils {
+public class AppiumUtils {
     static {
         System.setProperty("log4j.configurationFile", "log4j2.xml");
     }

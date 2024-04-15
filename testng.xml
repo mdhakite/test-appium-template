@@ -6,7 +6,7 @@
     </listeners>
     <test thread-count="1" name="IOS Test">
         <classes>
-            <class name="com.appName.tests.HomeScreenTest"/>
+            <class name="com.appName.tests.iosTests.HomeScreenTest"/>
         </classes>
     </test>
 </suite>

@@ -1,6 +1,5 @@
 package com.appName.TestUtils;
 
-import com.appName.utils.AppiumUtils;
 import com.appName.utils.YamlReader;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -10,7 +9,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-public class AndroidBaseTest extends AppiumUtils {
+public class AndroidBaseTest extends BaseTest {
 
     public AndroidDriver driver;
     public AppiumDriverLocalService service;
@@ -25,8 +24,7 @@ public class AndroidBaseTest extends AppiumUtils {
             YamlReader reader = new YamlReader(configFile);
             String ipAddress = (String) reader.getProperty("appium.ipAddress");
             int port = (int) reader.getProperty("appium.port");
-            service = startAppiumServer(ipAddress, port, (String) reader.getProperty("appium.mainJSPath"));
-
+            service = appiumUtils.startAppiumServer(ipAddress, port, (String) reader.getProperty("appium.mainJSPath"));
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("deviceName", (String) reader.getProperty("android.deviceName"));
             capabilities.setCapability("platformName", "Android");

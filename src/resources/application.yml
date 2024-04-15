@@ -1,4 +1,4 @@
-profile: qa
+env: dev
 platform: iOS
 appium:
   mainJSPath: "C:\\Users\\Madhusudan\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"
@@ -12,13 +12,16 @@ app:
 
 android:
   deviceName: Nexus 6 API 30
+  platform: test
 
 browser: chrome
 testTimeout: 10
 
 api:
-  login:
-    uri: https://reqres.in/api/users/
+  usermanagement:
+    login: usermanagement/user/login
+    signup: usermanagement/user/signup
+    verify: usermanagement/user/verify
 
 
 

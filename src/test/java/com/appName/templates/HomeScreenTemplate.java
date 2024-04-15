@@ -1,7 +1,7 @@
 package com.appName.templates;
 
 import com.appName.TestUtils.IOSBaseTest;
-import com.appName.tests.HomeScreenTest;
+import com.appName.tests.iosTests.HomeScreenTest;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
